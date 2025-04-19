@@ -1,0 +1,5 @@
+package com.ms.booking.config;
+
+public class AppConfig {
+
+}

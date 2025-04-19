@@ -1,0 +1,24 @@
+package com.ms.flight.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ms.flight.entity.Passenger;
+import com.ms.flight.entity.PassengerDetails;
+import com.ms.flight.repo.PassengerRepository;
+
+@Service
+public class PassengerService {
+
+	@Autowired
+	private PassengerRepository passengerRepository;
+
+	public void createPassenger(List<Passenger> passengers) {
+
+		passengerRepository.saveAll(passengers);
+
+	}
+	
+}

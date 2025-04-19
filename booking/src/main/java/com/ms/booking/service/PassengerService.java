@@ -1,0 +1,28 @@
+package com.ms.booking.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ms.booking.entity.Passenger;
+import com.ms.booking.repo.PassengerRepository;
+
+@Service
+public class PassengerService {
+
+	@Autowired
+	private PassengerRepository passengerRepository;
+
+	public void createPassenger(List<Passenger> passengers) {
+		
+		for (Passenger p : passengers) {
+		    System.out.println(p.getPassengerId());
+		}
+
+
+		passengerRepository.saveAll(passengers);
+
+	}
+	
+}

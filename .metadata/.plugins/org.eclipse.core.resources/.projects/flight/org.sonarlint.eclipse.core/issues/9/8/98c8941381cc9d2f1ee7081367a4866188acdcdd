@@ -1,0 +1,14 @@
+
+ç
+java:S2293E"YReplace the type specification in this constructor call with the diamond operator ("<>").b 175705c04ecaf1f7d87beae2e253547bh
+^	java:S1061"+Replace this use of System.out by a logger.b bb1c3f2ea781263d3a2bb92b06a2061fh
+|
+java:S44885"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"b da96c53f00f8b26f1cc29c20b05f4ee1h
+^	java:S1067"+Replace this use of System.out by a logger.b bb1c3f2ea781263d3a2bb92b06a2061fh
+|
+java:S4488;"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"b da96c53f00f8b26f1cc29c20b05f4ee1h
+^	java:S106="+Replace this use of System.out by a logger.b bb1c3f2ea781263d3a2bb92b06a2061fh
+|
+java:S4488A"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"b da96c53f00f8b26f1cc29c20b05f4ee1h
+¿
+java:S11300"ÑRemove the declaration of thrown exception 'com.ms.flight.exception.ARSServiceException', as it cannot be thrown from method's body.8„¥¯·‰2b 4a176113ebbc64d674d3dad79b19f5d0h

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.ms.user.exception.ExceptionConstants"/>
+    <fullyQualifiedTypeName name="jakarta.validation.constraints.NotNull"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Table"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Temporal"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
+    <fullyQualifiedTypeName name="com.ms.flight.exception.ExceptionConstants"/>
+    <fullyQualifiedTypeName name="com.ms.booking.entity.Passenger"/>
+    <fullyQualifiedTypeName name="com.ms.booking.exception.ExceptionConstants"/>
+</qualifiedTypeNameHistroy>

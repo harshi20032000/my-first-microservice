@@ -1,0 +1,19 @@
+
+c
+java:S3740?"/Provide the parametrized type for this generic.b 3e8b518e54342f8da4e05d5b1d90b2d7h
+ç
+java:S2293E"YReplace the type specification in this constructor call with the diamond operator ("<>").b 660b94a7c0393da63cb294baa3b063d0h
+ç
+java:S2293m"YReplace the type specification in this constructor call with the diamond operator ("<>").b b76c4ef2bc2e4e14a643368561f24a85h
+å
+java:S14503"XRemove the "noOfSeats" field and declare it as a local variable in the relevant methods.b 60df577f0022b7f75a422fea23ffe66ch
+^	java:S106J"+Replace this use of System.out by a logger.b bb1c3f2ea781263d3a2bb92b06a2061fh
+]
+java:S2140O")Use "java.util.Random.nextInt()" instead.b 3de8353f9a30b5d10e2f7c496ecab616h
+^	java:S106V"+Replace this use of System.out by a logger.b bb1c3f2ea781263d3a2bb92b06a2061fh
+^	java:S106W"+Replace this use of System.out by a logger.b bb1c3f2ea781263d3a2bb92b06a2061fh
+^	java:S106_"+Replace this use of System.out by a logger.b bb1c3f2ea781263d3a2bb92b06a2061fh
+_
+java:S2629N"$Invoke method(s) only conditionally.8¯˙ƒ„‰2b 5cb87020fccf37a7b0436faa97d95b83h
+á
+java:S2259@"LA "NullPointerException" could be thrown; "getFieldError()" can return null.8¯˙ƒ„‰2b afec33a3c41c06b6ab11e9019fd09e04h

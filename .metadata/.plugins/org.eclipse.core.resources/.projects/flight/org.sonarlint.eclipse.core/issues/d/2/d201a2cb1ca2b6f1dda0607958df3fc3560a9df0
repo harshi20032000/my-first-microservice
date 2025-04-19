@@ -1,0 +1,9 @@
+
+
+java:S22931"YReplace the type specification in this constructor call with the diamond operator ("<>").b 6eaf7aa90b702178680475d234682acch
+„
+java:S3655T"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.b 854a0d22935ac19412b3445a259ab12bh
+c
+java:S1172S"/Remove this unused method parameter "flightId".b 4f5052753aec67b53b2d3e618501a878h
+‹
+java:S3655E"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.8μιϋαδ2b c81435317896871cd3d3e59666e6dcbdh

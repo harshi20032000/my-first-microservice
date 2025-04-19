@@ -1,0 +1,15 @@
+
+c
+java:S3740<"/Provide the parametrized type for this generic.b 3e8b518e54342f8da4e05d5b1d90b2d7h
+Œ
+java:S1450-"XRemove the "noOfSeats" field and declare it as a local variable in the relevant methods.b 60df577f0022b7f75a422fea23ffe66ch
+]
+java:S2140K")Use "java.util.Random.nextInt()" instead.b 3de8353f9a30b5d10e2f7c496ecab616h
+_
+java:S2629J"$Invoke method(s) only conditionally.8úÛéãä2b 5cb87020fccf37a7b0436faa97d95b83h
+‡
+java:S2259="LA "NullPointerException" could be thrown; "getFieldError()" can return null.8á¥–éä2b afec33a3c41c06b6ab11e9019fd09e04h
+
+java:S2259Q"DA "NullPointerException" could be thrown; "flight" is nullable here.8á¥–éä2b ab0462b621aa84d6d1e2d704999f53cch
+Á
+java:S11309"…Remove the declaration of thrown exception 'com.ms.booking.exception.ARSServiceException', as it cannot be thrown from method's body.8á¥–éä2b 4a176113ebbc64d674d3dad79b19f5d0h
