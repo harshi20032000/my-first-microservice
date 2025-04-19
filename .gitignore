@@ -1,0 +1,61 @@
+# === Java ===
+*.class
+*.jar
+*.war
+*.ear
+
+# === Logs ===
+*.log
+logs/
+*.out
+
+# === Maven ===
+target/
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# === Gradle ===
+.gradle/
+build/
+
+# === Eclipse / STS ===
+.settings/
+.project
+.classpath
+
+# === IntelliJ (if used) ===
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# === OS files ===
+.DS_Store
+Thumbs.db
+
+# === Env Files ===
+.env
+*.env
+
+# === VS Code ===
+.vscode/
+
+# === Coverage/Reports ===
+jacoco.exec
+coverage/
+
+# === Database Files ===
+*.h2.db
+*.mv.db
+*.sql
+*.sqlite
+
+# === Temp files ===
+tmp/
+*.swp
+*~
+
+# === Generated files ===
+generated-sources/
