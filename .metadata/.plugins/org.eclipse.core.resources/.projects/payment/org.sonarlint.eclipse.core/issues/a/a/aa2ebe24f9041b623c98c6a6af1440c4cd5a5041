@@ -1,11 +1,11 @@
 
-Н
-java:S2293'"YReplace the type specification in this constructor call with the diamond operator ("<>").b 9ee8d09ef58373cd95feda08fe0c1a4dh
-Н
-java:S2293*"YReplace the type specification in this constructor call with the diamond operator ("<>").b 9ee8d09ef58373cd95feda08fe0c1a4dh
-~
-java:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"b da96c53f00f8b26f1cc29c20b05f4ee1h
-Л
-java:S3655"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.8Уњ§вд2b 84668b0f66fb2875a6fb8d3e85121ce9h
 o
 java:S1905"4Remove this unnecessary cast to "CreditCardDetails".8Уњ§вд2b ec8e185f61b6fe0e70a6fbf52296249eh
+Н
+java:S2293'"YReplace the type specification in this constructor call with the diamond operator ("<>").b 9ee8d09ef58373cd95feda08fe0c1a4dh
+Л
+java:S3655"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.8Уњ§вд2b 84668b0f66fb2875a6fb8d3e85121ce9h
+~
+java:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"b da96c53f00f8b26f1cc29c20b05f4ee1h
+Н
+java:S2293*"YReplace the type specification in this constructor call with the diamond operator ("<>").b 9ee8d09ef58373cd95feda08fe0c1a4dh

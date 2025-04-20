@@ -9,15 +9,11 @@ Y
 )src/main/resources/application.properties,0\6\06f65155ec73600b9fc5c4dc2883d4bb84d8e284
 g
 7src/main/java/com/ms/booking/service/TicketService.java,4\7\478b98732f9e59aee5b143562f8626f8cc31232a
-j
-:src/main/java/com/ms/booking/service/PassengerService.java,6\f\6f6e4165a837cf5096c8603e04977ffd76041340
 b
 2src/main/java/com/ms/booking/entity/Passenger.java,b\a\ba89caadfd5cdf7e44bcd9031064c7e9cceea698
 _
 /src/main/java/com/ms/booking/entity/Ticket.java,d\6\d63caa8c98f8ba89668c77bd6cab4d192f0d95a1
 b
 2src/main/java/com/ms/booking/config/AppConfig.java,f\f\ff1b42b54914c0a94ccef22d2878e090d9b48a92
-j
-:src/main/java/com/ms/booking/repo/PassengerRepository.java,7\a\7aa1cc589fde456291474c3e2412efba0cd7d384
 n
 >src/main/java/com/ms/booking/controller/BookingController.java,9\1\9181cc4a4d7399f79d17fa139c37a5d0d7fc25bd

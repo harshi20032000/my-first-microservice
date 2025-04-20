@@ -13,7 +13,3 @@ g
 .src/main/java/com/ms/flight/entity/Flight.java,0\f\0fe3aba4b22a7ac6c25dcdefb7d5ebca046b5670
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-m
-=src/main/java/com/ms/flight/controller/BookingController.java,0\5\059361d64998e6256f266c97762da6bde78e1d66
-h
-8src/main/java/com/ms/flight/entity/PassengerDetails.java,4\c\4cfa1746a92f9df3b33a7673ae4c7ae53849f0c6
