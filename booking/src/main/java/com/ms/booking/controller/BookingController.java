@@ -25,7 +25,6 @@ import com.ms.booking.entity.Ticket;
 import com.ms.booking.exception.ARSServiceException;
 import com.ms.booking.exception.ExceptionConstants;
 import com.ms.booking.exception.InfyGoServiceException;
-import com.ms.booking.service.PassengerService;
 import com.ms.booking.service.TicketService;
 import com.ms.booking.utility.ClientErrorInformation;
 
@@ -36,14 +35,10 @@ public class BookingController {
 
 	protected Logger logger = Logger.getLogger(BookingController.class.getName());
 
-	
 	@Autowired
 	private TicketService ticketService;
-	@Autowired
-	private PassengerService passengerService;
 	private Ticket ticket;
-	private int noOfSeats;
-	
+
 	@Autowired
 	private RestTemplate restTemplate;
 
@@ -76,7 +71,7 @@ public class BookingController {
 
 		ticket.setPnr(pnr);
 
-		Flight flight = restTemplate.getForEntity("http://localhost:4001/flights/"+flightId, Flight.class).getBody();
+		Flight flight = restTemplate.getForEntity("http://localhost:4001/flights/" + flightId, Flight.class).getBody();
 
 		double fare = flight.getFare();
 		double totalFare = fare * (passengerDetails.getPassengerList().size());
@@ -91,27 +86,22 @@ public class BookingController {
 		ticket.setFlightId(flight.getFlightId());
 		ticket.setUserId(username);
 		ticket.setTotalFare(totalFare);
-		noOfSeats = passengerDetails.getPassengerList().size();
+		int noOfSeats = passengerDetails.getPassengerList().size();
 		ticket.setNoOfSeats(noOfSeats);
 		ticketService.createTicket(ticket);
 
-		addPassengers(bookingDetails.getPassengerList());
+		addPassengers(bookingDetails.getPassengerList(), pnr);
 
-		restTemplate.getForEntity("http://localhost:4001/flights/"+flightId+ "/"+noOfSeats, Flight.class);
+		restTemplate.getForEntity("http://localhost:4001/flights/" + flightId + "/" + noOfSeats, Flight.class);
 
 		return new ResponseEntity<>(bookingDetails, HttpStatus.OK);
 
 	}
 
-	private void addPassengers(List<Passenger> passengers) {
-
+	private void addPassengers(List<Passenger> passengers, int pnr) {
 		for (Passenger passenger : passengers) {
-			passenger.setTicket(ticket);
-
+			passenger.setTicketPnr(pnr);
 		}
-
-		passengerService.createPassenger(passengers);
-
+		restTemplate.postForEntity("http://localhost:4005/passenger", passengers, Boolean.class);
 	}
-
 }

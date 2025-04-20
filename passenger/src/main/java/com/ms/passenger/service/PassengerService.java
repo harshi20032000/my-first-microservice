@@ -1,12 +1,12 @@
-package com.ms.booking.service;
+package com.ms.passenger.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.ms.booking.entity.Passenger;
-import com.ms.booking.repo.PassengerRepository;
+import com.ms.passenger.entity.Passenger;
+import com.ms.passenger.repo.PassengerRepository;
 
 @Service
 public class PassengerService {
@@ -15,14 +15,9 @@ public class PassengerService {
 	private PassengerRepository passengerRepository;
 
 	public void createPassenger(List<Passenger> passengers) {
-		
-		for (Passenger p : passengers) {
-		    System.out.println(p.getPassengerId());
-		}
-
 
 		passengerRepository.saveAll(passengers);
 
 	}
-	
+
 }

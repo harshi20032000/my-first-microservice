@@ -1,8 +1,8 @@
-package com.ms.booking.repo;
+package com.ms.passenger.repo;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.ms.booking.entity.Passenger;
+import com.ms.passenger.entity.Passenger;
 
 public interface PassengerRepository extends JpaRepository<Passenger, Integer> {
 

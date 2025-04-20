@@ -9,8 +9,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -23,9 +21,7 @@ public class Passenger {
 	private String passengerName;
 	private String passengerAge;
 	private String passengerGender;
-	@OneToOne
-	@JoinColumn
-	private Ticket ticket;
+	private Integer ticketPnr;
 
 	public Integer getPassengerId() {
 		return passengerId;
@@ -59,18 +55,18 @@ public class Passenger {
 		this.passengerGender = passengerGender;
 	}
 
-	public Ticket getTicket() {
-		return ticket;
-	}
-
-	public void setTicket(Ticket ticket) {
-		this.ticket = ticket;
-	}
-
 	@Override
 	public String toString() {
 		return "Passenger [passengerId=" + passengerId + ", passengerName=" + passengerName + ", passengerAge="
-				+ passengerAge + ", passengerGender=" + passengerGender + ", ticket=" + ticket + "]";
+				+ passengerAge + ", passengerGender=" + passengerGender + "]";
+	}
+
+	public Integer getTicketPnr() {
+		return ticketPnr;
+	}
+
+	public void setTicketPnr(Integer ticketPnr) {
+		this.ticketPnr = ticketPnr;
 	}
 
 }
