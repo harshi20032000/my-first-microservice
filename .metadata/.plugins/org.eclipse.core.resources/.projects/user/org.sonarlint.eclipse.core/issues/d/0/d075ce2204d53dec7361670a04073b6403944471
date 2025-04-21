@@ -1,10 +1,0 @@
-
-ç
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").b 9ee8d09ef58373cd95feda08fe0c1a4dh
-ç
-java:S2293%"YReplace the type specification in this constructor call with the diamond operator ("<>").b 9ee8d09ef58373cd95feda08fe0c1a4dh
-Å	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.b ad3d06d03d94223fa652babc913de686h
-~
-java:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"b da96c53f00f8b26f1cc29c20b05f4ee1h
-~
-java:S4488""JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"b da96c53f00f8b26f1cc29c20b05f4ee1h

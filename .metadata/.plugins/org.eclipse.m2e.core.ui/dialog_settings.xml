@@ -2,6 +2,12 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\Harshikesh\Downloads\infygoworksapce\flight"/>
+			<item value="C:\Users\Harshikesh\Downloads\infygoworksapce\payment"/>
+			<item value="C:\Users\Harshikesh\Downloads\infygoworksapce\user"/>
+			<item value="C:\Users\Harshikesh\Downloads\infygoworksapce\booking"/>
+			<item value="C:\Users\Harshikesh\Downloads\infygoworksapce\passenger"/>
+			<item value="C:\Users\Harshikesh\Downloads\infygoworksapce\config-server"/>
 			<item value="C:\Users\Harshikesh\Downloads\InfyGo_Monolith_App\InfyGo_Monolith_App"/>
 		</list>
 		<list key="projectNameTemplate">

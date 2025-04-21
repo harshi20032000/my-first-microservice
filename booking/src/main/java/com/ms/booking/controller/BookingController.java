@@ -7,6 +7,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.Errors;
@@ -34,6 +35,12 @@ import com.ms.booking.utility.ClientErrorInformation;
 public class BookingController {
 
 	protected Logger logger = Logger.getLogger(BookingController.class.getName());
+
+	@Value("${flight.api.url}")
+	private String flightApiUrl;
+	
+	@Value("${passenger.api.url}")
+	private String passengerApiUrl;
 
 	@Autowired
 	private TicketService ticketService;
@@ -71,7 +78,7 @@ public class BookingController {
 
 		ticket.setPnr(pnr);
 
-		Flight flight = restTemplate.getForEntity("http://localhost:4001/flights/" + flightId, Flight.class).getBody();
+		Flight flight = restTemplate.getForEntity(flightApiUrl + flightId, Flight.class).getBody();
 
 		double fare = flight.getFare();
 		double totalFare = fare * (passengerDetails.getPassengerList().size());
@@ -92,7 +99,7 @@ public class BookingController {
 
 		addPassengers(bookingDetails.getPassengerList(), pnr);
 
-		restTemplate.getForEntity("http://localhost:4001/flights/" + flightId + "/" + noOfSeats, Flight.class);
+		restTemplate.getForEntity(flightApiUrl + flightId + "/" + noOfSeats, Flight.class);
 
 		return new ResponseEntity<>(bookingDetails, HttpStatus.OK);
 
@@ -102,6 +109,6 @@ public class BookingController {
 		for (Passenger passenger : passengers) {
 			passenger.setTicketPnr(pnr);
 		}
-		restTemplate.postForEntity("http://localhost:4005/passenger", passengers, Boolean.class);
+		restTemplate.postForEntity(passengerApiUrl, passengers, Boolean.class);
 	}
 }
